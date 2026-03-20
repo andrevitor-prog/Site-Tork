@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tork3 Car Center | Estética e Mecânica Premium Joinville</title>
+    <!-- SEO Local -->
+    <meta name="description" content="Tork3 Car Center Joinville: Aceleramos o giro do seu estoque com estética de elite e mecânica de alta precisão. O parceiro nº 1 do lojista.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,700;1,900&family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --red-tork: #E31C25; --gray-dark: #121212; }
+        body { font-family: 'Inter', sans-serif; background-color: #080808; color: #e5e7eb; overflow-x: hidden; }
+        .font-tork { font-family: 'Exo 2', sans-serif; }
+        
+        /* Efeito de Vidro e Profundidade */
+        .glass { background: rgba(20, 20, 20, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); }
+        .red-shadow { box-shadow: 0 0 30px rgba(227, 28, 37, 0.2); }
+        
+        /* Animação de Texto */
+        .text-glow { text-shadow: 0 0 15px rgba(227, 28, 37, 0.5); }
+        
+        /* Estilo Bento Grid */
+        .bento-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); background: #111; border: 1px solid #222; overflow: hidden; }
+        .bento-card:hover { transform: translateY(-5px); border-color: var(--red-tork); background: #161616; }
+
+        /* Botão Racing Estilo F1 */
+        .btn-tork { transform: skewX(-15deg); transition: all 0.3s ease; position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; font-weight: 900; }
+        .btn-tork > span { transform: skewX(15deg); }
+        .btn-tork:hover { transform: skewX(-15deg) scale(1.05); filter: brightness(1.2); }
+    </style>
+</head>
+<body>
+
+    <!-- Navegação High-Tech -->
+    <nav class="fixed w-full z-[100] px-4 py-4">
+        <div class="max-w-7xl mx-auto glass rounded-2xl px-6 py-2 flex justify-between items-center border border-white/10">
+            <div class="flex items-center">
+                <!-- LOGO PLACEHOLDER - Substitua pelo link real da imagem enviada -->
+                <img src="https://i.ibb.co/L5hK1m3/tork3-logo.png" alt="Tork3 Logo" class="h-10 md:h-14 py-1">
+            </div>
+            
+            <div class="hidden md:flex gap-8 text-[10px] uppercase font-black tracking-[2px]">
+                <a href="#sobre" class="hover:text-red-500 transition">Sobre</a>
+                <a href="#servicos" class="hover:text-red-500 transition text-red-600">Serviços</a>
+                <a href="#lojista" class="hover:text-red-500 transition italic underline decoration-red-600">Área do Lojista</a>
+                <a href="#contato" class="hover:text-red-500 transition">Contato</a>
+            </div>
+
+            <a href="https://wa.me/5547999999999" class="btn-tork bg-red-600 px-6 py-2 text-[11px] uppercase text-white shadow-lg red-shadow">
+                <span>Orçamento Express</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Onde a Venda Acontece -->
+    <section id="inicio" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Background Detailing -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+            <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=2071&auto=format&fit=crop" class="w-full h-full object-cover" alt="Mecânica Automotiva">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="w-12 h-[2px] bg-red-600"></span>
+                    <p class="text-red-500 font-black italic tracking-widest text-xs uppercase font-tork">Joinville / Santa Catarina</p>
+                </div>
+                <h1 class="text-6xl md:text-9xl font-black font-tork italic leading-none mb-6 uppercase text-white tracking-tighter">
+                    VALORIZE O <span class="text-red-600 text-glow italic leading-none">ESTOQUE</span> <br> 
+                    DOMINE A <span class="text-gradient">VENDA.</span>
+                </h1>
+                <p class="text-lg md:text-2xl text-gray-300 max-w-2xl mb-12 font-light italic leading-relaxed border-l-2 border-red-600 pl-6">
+                    Tork3 é a engrenagem que falta para a sua revenda. Entregamos estética técnica e mecânica rigorosa com <span class="text-white font-bold underline decoration-red-600">padrão de showroom internacional.</span>
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="#lojista" class="btn-tork bg-white text-black px-12 py-5 text-sm">
+                        <span>SOLUÇÃO PARA LOJISTAS</span>
+                    </a>
+                    <a href="https://wa.me/5547999999999" class="btn-tork border-2 border-red-600 text-white px-12 py-5 text-sm hover:bg-red-600">
+                        <span>CONSULTORIA PREMIUM</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Social Proof flutuante -->
+        <div class="absolute bottom-10 right-10 hidden lg:block glass p-4 rounded-xl border-l-4 border-red-600 animate-pulse">
+            <p class="text-[10px] text-gray-400 font-bold uppercase mb-1">Status do Pátio</p>
+            <p class="text-white font-black italic">+12 Carros Preparados hoje</p>
+        </div>
+    </section>
+
+    <!-- Bento Grid Services -->
+    <section id="servicos" class="py-24 px-6 bg-[#050505]">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-4xl md:text-6xl font-black font-tork italic uppercase tracking-tighter"><span class="text-red-600">ECOSSISTEMA</span> TORK3</h2>
+                <p class="text-gray-500 font-bold uppercase text-xs tracking-[0.4em] mt-2">Mecânica e Estética sem deslocar o seu veículo.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-4 grid-rows-2 gap-4 h-full">
+                <!-- Polimento (Destaque) -->
+                <div class="md:col-span-3 lg:col-span-2 row-span-2 bento-card p-8 flex flex-col justify-end min-h-[400px] relative">
+                    <img src="https://images.unsplash.com/photo-1599256621730-535171e28e50?q=80&w=2071&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-30 grayscale hover:grayscale-0 transition duration-700">
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-black font-tork italic mb-4 uppercase">Estética Nível Concurso</h3>
+                        <p class="text-gray-400 mb-6 text-sm">Polimento comercial, técnico, vitrificação Gyeon e limpeza detalhada. Preparação estratégica para valorizar o ticket médio do veículo.</p>
+                        <div class="flex flex-wrap gap-2 text-[10px] font-black uppercase tracking-wider text-red-500 italic">
+                            <span>#Espelhamento</span> <span>#Detalhamento</span> <span>#PadrãoShowroom</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mecânica -->
+                <div class="md:col-span-3 lg:col-span-2 bento-card p-8 flex items-center justify-between group">
+                    <div>
+                        <h3 class="text-xl font-black font-tork italic uppercase mb-2 group-hover:text-red-600 transition">Mecânica de Giro</h3>
+                        <p class="text-xs text-gray-400 italic leading-snug">Troca de óleo, suspensão, freios e diagnósticos precisos. Checklist completo pré-venda.</p>
+                    </div>
+                    <i class="fas fa-screwdriver-wrench text-3xl text-red-600/30 group-hover:text-red-600 transition"></i>
+                </div>
+
+                <!-- Higienização -->
+                <div class="md:col-span-3 lg:col-span-1 bento-card p-6 text-center group">
+                    <i class="fas fa-wind text-4xl text-red-600 mb-4 block opacity-40 group-hover:scale-110 transition"></i>
+                    <h3 class="font-black font-tork italic uppercase text-sm mb-2 italic tracking-tighter leading-none text-white uppercase italic">Oxisanitização <br>e Interior</h3>
+                </div>
+
+                <!-- Revitalização -->
+                <div class="md:col-span-3 lg:col-span-1 bento-card p-6 text-center group">
+                    <i class="fas fa-shield-halved text-4xl text-red-600 mb-4 block opacity-40 group-hover:scale-110 transition"></i>
+                    <h3 class="font-black font-tork italic uppercase text-sm mb-2 italic tracking-tighter leading-none text-white uppercase italic">Vitrificação <br>Pro-Grade</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parceria Revenda: O coração do faturamento -->
+    <section id="lojista" class="py-24 relative">
+        <div class="container mx-auto px-6 bg-red-600 rounded-[3rem] p-12 md:p-24 overflow-hidden relative">
+            <div class="absolute right-0 bottom-0 p-10 opacity-10 pointer-events-none">
+                <i class="fas fa-handshake text-[20rem] text-black italic"></i>
+            </div>
+            <div class="max-w-3xl relative z-10">
+                <h2 class="text-5xl md:text-8xl font-black font-tork italic text-white leading-[0.9] uppercase mb-8">
+                    PARCEIRO <br> <span class="text-black italic">ESTRATÉGICO.</span>
+                </h2>
+                <p class="text-white text-xl md:text-2xl font-bold mb-10 italic leading-snug">
+                    Carro parado no pátio é dinheiro desvalorizando. Na Tork3, sua revenda tem <span class="underline decoration-black">atendimento prioritário</span>, preço diferenciado para lote e a entrega mais rápida de Santa Catarina.
+                </p>
+                <div class="grid sm:grid-cols-2 gap-8 text-white uppercase font-black italic tracking-widest text-xs">
+                    <div class="flex items-center gap-4"><i class="fas fa-bolt-lightning text-black"></i> Logística Própria (Leva e traz)</div>
+                    <div class="flex items-center gap-4"><i class="fas fa-check-double text-black"></i> Padrão "Entrar e Rodar"</div>
+                    <div class="flex items-center gap-4"><i class="fas fa-clock text-black"></i> Agendamento Digital para Frota</div>
+                    <div class="flex items-center gap-4"><i class="fas fa-money-bill-trend-up text-black"></i> Maior Valor de Revenda</div>
+                </div>
+                
+                <a href="https://wa.me/5547999999999" class="btn-tork bg-black text-white px-10 py-5 text-sm mt-12 hover:scale-105 transition">
+                    <span>SEJA UM PARCEIRO TORK3</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-24 bg-[#050505]">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16">
+            <div>
+                <h3 class="text-red-600 font-black italic tracking-widest text-sm mb-4">ONDE O TORQUE ENCONTRA A ESTÉTICA</h3>
+                <h2 class="text-5xl md:text-7xl font-black font-tork italic leading-none mb-10 uppercase tracking-tighter italic">VISITE O NOSSO <br><span class="text-red-600">HQ.</span></h2>
+                
+                <div class="space-y-8 italic font-bold">
+                    <div class="flex gap-6">
+                        <div class="bg-red-600 h-16 w-16 flex items-center justify-center skew-x-[-10deg]">
+                            <i class="fas fa-map-location text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="uppercase text-gray-500 text-xs mb-1">Localização Centralizada</p>
+                            <p class="text-xl">Rua Principal do Detalhamento, Joinville, SC</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="bg-red-600 h-16 w-16 flex items-center justify-center skew-x-[-10deg]">
+                            <i class="fab fa-whatsapp text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="uppercase text-gray-500 text-xs mb-1">Plantão via WhatsApp</p>
+                            <p class="text-xl text-red-500 font-black italic underline tracking-widest leading-none text-white uppercase italic">(47) 9 9999-9999</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lead Capture -->
+            <div class="bg-[#111] p-10 rounded-3xl border border-white/5 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-red-600 opacity-5 blur-[80px]"></div>
+                <h3 class="text-2xl font-black italic uppercase mb-8 italic italic tracking-tighter leading-none text-white uppercase italic">Inicie a Preparação</h3>
+                <form class="space-y-4">
+                    <div class="group">
+                        <label class="block text-[10px] text-gray-500 uppercase font-black mb-1 group-hover:text-red-500 transition">Sua Loja / Particular</label>
+                        <input type="text" placeholder="EX: NOME DA REVENDA" class="w-full bg-[#181818] border border-white/5 p-4 rounded-xl focus:border-red-600 outline-none italic font-bold text-sm transition">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] text-gray-500 uppercase font-black mb-1 italic tracking-widest leading-none text-white uppercase italic tracking-widest">Serviço Necessário</label>
+                        <select class="w-full bg-[#181818] border border-white/5 p-4 rounded-xl focus:border-red-600 outline-none italic font-bold text-sm transition appearance-none">
+                            <option>Estética (Polimento / Limpeza)</option>
+                            <option>Mecânica Geral</option>
+                            <option>Full Check (Combo Preparação)</option>
+                            <option>Contrato para Lojistas</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-tork bg-red-600 text-white w-full py-5 text-sm shadow-[0_10px_30px_rgba(227,28,37,0.3)]">
+                        <span>SOLICITAR ATENDIMENTO</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Clean & Impactful -->
+    <footer class="py-12 bg-black border-t border-white/5">
+        <div class="container mx-auto px-6 text-center italic tracking-widest leading-none text-white uppercase italic italic">
+            <p class="text-gray-500 font-black text-[10px] uppercase tracking-[5px]">&copy; 2024 TORK3 CAR CENTER - O MOTOR DO SEU ESTOQUE.</p>
+        </div>
+    </footer>
+
+    <!-- Botão de Tração (WhatsApp) -->
+    <a href="https://wa.me/5547999999999" target="_blank" class="fixed bottom-6 right-6 bg-[#25d366] text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-[0_0_30px_rgba(37,211,102,0.4)] hover:scale-110 hover:-rotate-12 transition-all duration-300 z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
